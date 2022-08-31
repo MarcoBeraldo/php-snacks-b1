@@ -1,14 +1,14 @@
 <?php 
 
-$random_numbers = [];
+$numbers = [];
 
-while (count($random_numbers) < 15) {
+while (count($numbers) < 15) {
 
-  $number = rand(1, 100);
-  if (!in_array($number, $random_numbers)) $random_numbers[] = $number;
+  $rand_num = rand(1, 100);
+  if (!in_array($rand_num, $numbers)) $numbers[] = $rand_num;
 
 }
 
-var_dump($random_numbers);
+var_dump($numbers);
 
 ?>
