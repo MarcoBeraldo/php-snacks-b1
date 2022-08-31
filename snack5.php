@@ -11,7 +11,7 @@ Quibusdam vitae autem aperiam soluta dolores vero, facilis odit dignissimos maxi
 Hic, laudantium. Incidunt ratione consequuntur cum nam ullam blanditiis a ex voluptas aliquid sequi eum sed ad officia fugit magni, earum veniam enim rem architecto itaque possimus? Nemo, accusamus similique.
 Eum labore sunt iure hic accusamus, eligendi vero saepe quas neque fugiat. Repudiandae voluptates, totam unde, temporibus fugit corrupti cum animi incidunt iure perferendis dicta enim iste laudantium optio quia?";
 
- $div_paragraph = explode(". ", $paragraph);
+ $paragraphs = explode(". ", $paragraph);
  
  ?>
 
@@ -27,13 +27,12 @@ Eum labore sunt iure hic accusamus, eligendi vero saepe quas neque fugiat. Repud
  <body>
   <h2>Paragrafo</h2>
   <p><?php echo $paragraph ?></p>
-
   
   <h2>Paragrafi divisi</h2>
- 
-    <?php for ($i = 0; $i < count($div_paragraph); $i++) : ?>
-    <p><?php echo $div_paragraph[$i] ?></p>
-    <?php endfor ; ?>
+
+    <?php  foreach ($paragraphs as $paragraph) : ?>
+    <p><?php echo $paragraph ?></p>
+    <?php endforeach ; ?>
  
  </body>
  </html>
