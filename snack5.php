@@ -25,10 +25,10 @@ Eum labore sunt iure hic accusamus, eligendi vero saepe quas neque fugiat. Repud
  </head>
 
  <body>
-  <h2>Paragrafo Principale:</h2>
+  <h2>Paragrafo</h2>
   <p><?php echo $paragraph ?></p>
 
-  <hr />
+  
   <h2>Paragrafi divisi</h2>
  
     <?php for ($i = 0; $i < count($div_paragraph); $i++) : ?>
